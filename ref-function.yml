@@ -9,5 +9,7 @@ Resources:
       InstanceType: t2.micro
       Tags:
         - Key: "Name"
-          Value: "Change1"
-#         Value: !Join ["-", [Lets, See, ChangeSet]]
+          Value: !Join 
+           - ""
+           - - "My Instance In" 
+             -  !Ref AWS::Region 
